@@ -1,5 +1,7 @@
 import 'package:jiffy/src/enums/startOfWeek.dart';
 import 'package:jiffy/src/locale/arLocale.dart';
+import 'package:jiffy/src/locale/azLocale.dart';
+import 'package:jiffy/src/locale/bnLocale.dart';
 import 'package:jiffy/src/locale/deLocale.dart';
 import 'package:jiffy/src/locale/enLocale.dart';
 import 'package:jiffy/src/locale/esLocale.dart';
@@ -16,14 +18,13 @@ import 'package:jiffy/src/locale/nlLocale.dart';
 import 'package:jiffy/src/locale/plLocale.dart';
 import 'package:jiffy/src/locale/ptLocale.dart';
 import 'package:jiffy/src/locale/ruLocale.dart';
-import 'package:jiffy/src/locale/thLocale.dart';
-import 'package:jiffy/src/locale/ukLocale.dart';
-import 'package:jiffy/src/locale/azLocale.dart';
 import 'package:jiffy/src/locale/svLocale.dart';
+import 'package:jiffy/src/locale/thLocale.dart';
 import 'package:jiffy/src/locale/trLocale.dart';
+import 'package:jiffy/src/locale/ukLocale.dart';
+import 'package:jiffy/src/locale/viLocale.dart';
 import 'package:jiffy/src/locale/zhCnLocale.dart';
 import 'package:jiffy/src/locale/zhLocale.dart';
-import 'package:jiffy/src/locale/bnLocale.dart';
 
 Map<String, Locale> _availableLocales = {
   'en': EnLocale(StartOfWeek.SUNDAY),
@@ -74,7 +75,8 @@ Map<String, Locale> _availableLocales = {
   'fa': FaLocale(true, StartOfWeek.SATURDAY),
   'bn': BnLocale(StartOfWeek.SUNDAY),
   'nl': NlLocale(StartOfWeek.MONDAY),
-  'th': ThLocale(StartOfWeek.SUNDAY)
+  'th': ThLocale(StartOfWeek.SUNDAY),
+  'vi': VietnameseLocale(StartOfWeek.MONDAY)
 };
 
 Locale getLocale(String locale) {
